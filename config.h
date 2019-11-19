@@ -103,8 +103,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ Mod1Mask|ControlMask|ShiftMask, XK_1,      spawn,          {.v = xrandr1 } },
-	{ Mod1Mask|ControlMask|ShiftMask, XK_2,      spawn,          {.v = xrandr2 } },
+	{ MODKEY|ControlMask|ShiftMask, XK_F1,     spawn,          {.v = xrandr1 } },
+	{ MODKEY|ControlMask|ShiftMask, XK_F2,     spawn,          {.v = xrandr2 } },
 };
 
 /* button definitions */
