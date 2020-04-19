@@ -66,6 +66,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *i3lock[]  = { "i3lock", "-i", "/home/georgy/Pictures/Wallpaper.jpg", NULL };
 static const char *xrandr1[]  = { "xrandr", "--output", "eDP1", "--primary", "--auto", "--output", "HDMI2", "--off", NULL };
 static const char *xrandr2[]  = { "xrandr", "--output", "HDMI2", "--primary", "--auto", "--output", "eDP1", "--off", NULL };
+static const char *xrandr3[]  = { "xrandr", "--output", "HDMI2", "--primary", "--auto", "--output", "eDP1", "--auto", "--right-of", "HDMI2", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -105,6 +106,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_F1,     spawn,          {.v = xrandr1 } },
 	{ MODKEY|ControlMask|ShiftMask, XK_F2,     spawn,          {.v = xrandr2 } },
+	{ MODKEY|ControlMask|ShiftMask, XK_F3,     spawn,          {.v = xrandr3 } },
 };
 
 /* button definitions */
